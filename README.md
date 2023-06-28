@@ -1,1 +1,0 @@
-# test_technique_t2i

@@ -1,0 +1,8 @@
+;TODO:
+; -copy/paste this file and rename it to config.ini
+; -fill each param with yours
+
+DB_HOST=""
+DB_NAME=""
+DB_USERNAME=""
+DB_PASSWORD=""
