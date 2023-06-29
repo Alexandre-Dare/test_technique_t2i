@@ -8,6 +8,6 @@ class MainController {
 
     public function home() {
         $persons = Person::findAll();
-        //dump($persons);
+        return $persons;
     }
 }

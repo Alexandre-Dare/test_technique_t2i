@@ -66,10 +66,13 @@ class Person {
         $sql = 'SELECT * FROM `person`';
         $pdoStatement = $pdo->query($sql);
         $results = $pdoStatement->fetchAll(PDO::FETCH_CLASS, 'App\Model\Person');
-        foreach ($results as $key => $person) {
-            $jsonData[] = json_encode($person, JSON_FORCE_OBJECT);
+        //transform the object in array for JSON convertion
+        foreach ($results as $person) {
+            $arrayResult[] = get_object_vars($person);
         }
-        dump($jsonData);
+        //json convertion
+        $jsonData = json_encode($arrayResult, JSON_FORCE_OBJECT | JSON_PRETTY_PRINT, 2);
+        //return the result
         return $jsonData;
     }
 
