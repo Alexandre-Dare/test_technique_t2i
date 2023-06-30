@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.alarmes {
+    width: 20%;
+    height: 90vh;
+}
+.alarmesPrises, .alarmesLibres{
+    height: 50%;
+    width: 100%;
+}
+.alarmesPrises{
+    background-color: tomato;
+}
+h2 {
+    background-color: dimgray;
+    color: white;
+}
+.alarmesLibres{
+    background-color: green;
+}
+.infoDisplay{
+    width: 80%;
+    height: 90vh;
+    background-color: gray;
+}
+footer{
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+.dateTime{
+    width: 30vw;
+    height: 5vh;
+    background-color: gray;
+}

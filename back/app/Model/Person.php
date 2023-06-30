@@ -89,14 +89,17 @@ class Person {
         $errorList = [];
 
         // getting data from Form
-
         $lastname = filter_input(INPUT_POST, 'lastname');
-        $firsname = filter_input(INPUT_POST, 'firsname');
+        $firstname = filter_input(INPUT_POST, 'firsname');
         $phone = filter_input(INPUT_POST, 'phone');
         $birthdate = filter_input(INPUT_POST, 'birthdate');
         $mail_adress = filter_input(INPUT_POST, 'mail_adress', FILTER_VALIDATE_EMAIL);
         $adress = filter_input(INPUT_POST, 'adress');
         $company_id = filter_input(INPUT_POST, 'comp$company_id', FILTER_VALIDATE_INT);
-        $in_alert = filter_input(INPUT_POST, 'in_alert')
+        $in_alert = filter_input(INPUT_POST, 'in_alert');
+        dump($_POST);
+
+        dump($lastname, $firstname, $phone, $birthdate, $mail_adress, $adress, $company_id, $in_alert);
     }
+    
 }

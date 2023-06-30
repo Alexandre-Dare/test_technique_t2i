@@ -9,4 +9,6 @@ class MainController {
     public function home() {
         $persons = Person::findAll();
     }
+
+    
 }

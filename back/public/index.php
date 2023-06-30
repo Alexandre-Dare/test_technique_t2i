@@ -34,6 +34,16 @@ $router->map(
     'main-home'
 );
 
+$router->map(
+    'POST',
+    '/create',
+    [
+        'method' => 'create',
+        'controller' => '\App\Controller\PersonController' 
+    ],
+    'person-create'
+);
+
 
 
 /* -------------
